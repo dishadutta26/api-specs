@@ -8,7 +8,7 @@ info:
 tags:
   - name: Consent
 paths:
-  /consent:
+  store/consent:
     post:
       summary: Set Cookie Consent Preferences
       tags:
