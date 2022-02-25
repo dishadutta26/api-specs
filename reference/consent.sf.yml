@@ -1,6 +1,6 @@
 openapi: 3.0.1
 servers:
-  - url: 'https://{$$.env.store_domain}/api/storefront'
+  - url: 'https://{store_domain}/api/storefront'
 info:
   title: Storefront Cookie Consent
   description: Specify shopper cookie consent preferences
