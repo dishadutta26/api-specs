@@ -11639,7 +11639,7 @@ paths:
         in: path
         required: true
     get:
-      description: Returns a single *Category*. Optional parameters can be passed in.
+      description: 'Returns a single *Category*. '
       operationId: getCategoryById
       parameters:
         - name: include_fields
