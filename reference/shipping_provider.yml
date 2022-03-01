@@ -27,7 +27,7 @@ info:
     - [Shipping Methods](/api-reference/store-management/shipping-api/shipping-method)
     - [Shipping Carriers](/api-reference/store-management/shipping-api/shipping-carrier)
   termsOfService: ''
-host: 'api.bigcommerce.com'
+host: api.bigcommerce.com
 schemes:
   - https
 consumes:
@@ -335,6 +335,10 @@ paths:
                   carrier_info:
                     code: vel
                     display_name: laborum e
+            No Shipping Rates:
+              quote_id: example_quote
+              messages: []
+              carrier_quotes: []
       summary: Request shipping rates
       tags:
         - Shipping Provider
@@ -617,7 +621,7 @@ definitions:
                         description: The value associated with the meta field
                       namespace:
                         type: string
-                        description: The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.
+                        description: 'The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.'
                       resource_type:
                         type: string
                         enum:
@@ -1121,7 +1125,7 @@ definitions:
               description: The value associated with the product or product variant meta field
             namespace:
               type: string
-              description: The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.
+              description: 'The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.'
             resource_type:
               type: string
               enum:
@@ -1298,7 +1302,7 @@ definitions:
         description: The value associated with the product or product variant meta field
       namespace:
         type: string
-        description: The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.
+        description: 'The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.'
       resource_type:
         type: string
         description: Resource type associated with the product or product variant meta field. Currently the only values available are 'product' or 'variant'
@@ -1818,7 +1822,7 @@ definitions:
                     description: The value associated with the meta field
                   namespace:
                     type: string
-                    description: The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.
+                    description: 'The namespace associated with product(/api-reference/catalog/catalog-api/product-metafields/createproductmetafield) or product variant (/api-reference/store-management/catalog/product-variants-metafields/createvariantmetafield) meta fields. The meta field namespace should be saved under this format `shipping_carrier_{yourCarrierId}` otherwise it will not be recognized as an attribute.'
                   resource_type:
                     type: string
                     enum:
